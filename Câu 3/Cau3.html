@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cau3</title>
+</head>
+<body>
+<script>
+    function isFibonacci(number) {
+        let a = 0;
+        let b = 1;
+        let temp = 0;
+        let flag = false;
+        while (temp <= number) {
+            if (temp == number) {
+                flag = true;
+                break;
+            } else {
+                temp = a + b;
+                a = b;
+                b = temp;
+            }
+        }
+        return flag;
+    }
+    let a = 54 ;
+    let result = isFibonacci(a);
+    alert(result);
+
+</script>
+</body>
+</html>

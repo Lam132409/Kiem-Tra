@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cau2</title>
+</head>
+<body>
+<script>
+    function tryRemoveFromArray(array, elem) {
+        for (let i = 0; i < array.length; i++) {
+            if (array[i] == elem) {
+                array.splice(i, 1);
+            }
+        }
+    }
+    let arr = [1, 12, 34, 4, 55, 4, 1, 5];
+    tryRemoveFromArray(arr, 5);
+    alert("Mảng sau khi xóa :"+ arr.toString());
+</script>
+</body>
+</html>
